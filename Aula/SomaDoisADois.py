@@ -9,12 +9,12 @@ def soma_dois(lista):
     else:
         if len(lista) % 2 != 0:
             soma = 0
-            for i in range(0, len(lista), 2):
+            for i in range(1, len(lista)+1, 2):
                 soma = soma + lista[i] + lista[i - 1]
             return soma - lista[len(lista) - 1]
         else:
             soma = 0
-            for i in range(0, len(lista), 2):
+            for i in range(1, len(lista)+1, 2):
                 soma = soma + lista[i] + lista[i - 1]
             return soma
 
